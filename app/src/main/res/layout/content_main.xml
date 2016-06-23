@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="io.androidblog.androidblog.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/description_text"
+        android:id="@+id/textView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewContent"
+        android:src="@drawable/ic_developer_mode_black_24dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_margin="@dimen/image_margin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/details.contact"
+        android:id="@+id/textViewContact"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/imageViewContent"
+        android:layout_toEndOf="@+id/imageViewContent"
+        android:layout_margin="@dimen/medium_text_margin"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewEmail"
+        android:layout_below="@+id/imageViewContent"
+        android:src="@drawable/ic_important_devices_black_24dp"
+        android:layout_marginLeft="@dimen/image_margin"
+        android:layout_marginTop="@dimen/image_margin"
+        android:layout_marginBottom="@dimen/image_margin"
+        android:layout_alignRight="@+id/imageViewContent"
+        android:layout_alignEnd="@+id/imageViewContent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/details.email"
+        android:id="@+id/textViewEmail"
+        android:layout_alignTop="@+id/imageViewSite"
+        android:layout_alignLeft="@+id/textViewSite"
+        android:layout_alignStart="@+id/textViewSite" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewSite"
+        android:layout_below="@+id/imageViewEmail"
+        android:src="@drawable/ic_email_black_24dp"
+        android:layout_marginLeft="@dimen/image_margin"
+        android:layout_marginTop="@dimen/image_margin"
+        android:layout_marginBottom="@dimen/image_margin"
+        android:layout_alignRight="@+id/imageViewContent"
+        android:layout_alignEnd="@+id/imageViewContent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/details.website"
+        android:id="@+id/textViewSite"
+        android:layout_alignTop="@+id/imageViewEmail"
+        android:layout_alignLeft="@+id/textViewContact"
+        android:layout_alignStart="@+id/textViewContact"
+        android:autoLink="web"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_call_black_24dp"
+        android:layout_below="@+id/imageViewSite"
+        android:layout_alignLeft="@+id/imageViewSite"
+        android:layout_alignStart="@+id/imageViewSite"
+        android:layout_marginLeft="@dimen/image_margin"
+        android:layout_marginTop="@dimen/image_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/details.phoneNumber"
+        android:id="@+id/textViewPhoneNumber"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignLeft="@+id/textViewEmail"
+        android:layout_alignStart="@+id/textViewEmail" />
+
+</RelativeLayout>

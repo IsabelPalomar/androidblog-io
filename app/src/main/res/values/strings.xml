@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android Blog</string>
+    <string name="description_text">"\nAndroid blog is an educational blog with the best resources in Spanish to learn android."</string>
+    <string name="action_settings">Settings</string>
+    <string name="details.contact">Isabel Palomar</string>
+    <string name="details.email">isabel.palomarb@gmail.com</string>
+    <string name="details.website">androidblog.io</string>
+    <string name="details.phoneNumber">7176089505</string>
+</resources>
